@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditi Shah - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Small local styles to render a clear TypeScript badge and spacing for skill icons */
+        .ts-badge {
+            display: inline-block;
+            background: #3178c6; /* TypeScript blue */
+            color: #fff;
+            font-weight: 700;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin-right: 8px;
+            font-size: 0.85em;
+            line-height: 1;
+            vertical-align: -0.15em;
+        }
+        .skill-chip i,
+        .skill-chip .ts-badge {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">AS</div>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact" class="btn-contact" target="_blank">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>Hi, I'm <span class="highlight">Aditi Shah</span></h1>
+                    <p class="subtitle">Full Stack Developer</p>
+                    <p>Building production web apps with a focus on speed, security and maintainability. Specializing in modern web technologies and AI-assisted development. I transform ideas into seamless digital experiences.</p>
+                    <div class="hero-buttons">
+                        <a href="https://calendly.com/aditishah0596/coffee-chat" class="btn btn-primary" target="_blank">Get in touch</a>
+                        <a class="btn btn secondary" href="files/Aditi Shah_Full Stack Developer.pdf" download><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
+                    </div>
+                     <div class="social-links">
+                        <a href="https://github.com/AditiShah17" target="_blank" aria-label="GitHub" class="icon-link">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            <span class="sr-only">GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aditishah17" target="_blank" aria-label="LinkedIn" class="icon-link">
+                            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                        <a href="mailto:aditishah0596@gmail.com" aria-label="Email" class="icon-link">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            <span class="sr-only">Email</span>
+                        </a>
+                    </div>
+
+                    <!-- Developer-focused quick view: tech stack + clean metrics -->
+                    <div class="hero-meta">
+                        <div class="tech-stack" aria-hidden="false" aria-label="Tech stack">
+                            <span class="tech"><i class="fa-brands fa-js"></i><small>JavaScript</small></span>
+                            <span class="tech"><i class="fa-brands fa-react"></i><small>React</small></span>
+                            <span class="tech"><i class="fa-brands fa-node-js"></i><small>Node.js</small></span>
+                            <span class="tech"><i class="fa-solid fa-database"></i><small>Databases</small></span>
+                            <span class="tech"><i class="fa-solid fa-server"></i><small>APIs</small></span>
+                        </div>
+
+                        <div class="metric-cards">
+                            <div class="metric-card">
+                                <div class="metric-number">5+</div>
+                                <div class="metric-label">Years building web apps</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-number">12+</div>
+                                <div class="metric-label">Projects delivered</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-number">Open</div>
+                                <div class="metric-label">To collaboration</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-wrapper">
+                        <div class="profile-bg"></div>
+                        <div class="profile-pic">
+                            <img src="files/AS.jpg" alt="Aditi Shah">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-content">
+                 I build elegant, user-centered web experiences focused on performance, maintainability,
+                        and delightful UI. I turn ambiguous problems into clear, tested solutions and enjoy
+                        mentoring teams to deliver high-quality software.
+            </p>
+            <div class="value-cards">
+                <div class="value-card">
+                    <div class="value-icon">💡</div>
+                    <h3>Clean Code</h3>
+                    <p>Writing maintainable, scalable code that stands the test of time.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🚀</div>
+                    <h3>Innovation</h3>
+                    <p>Always exploring new technologies and staying ahead of the curve.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3>Collaboration</h3>
+                    <p>Building strong teams and fostering open communication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <p class="skill-content">Technologies and tools I use to build reliable, scalable products</p>
+
+            <div class="skills-wrap">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-chips">
+                        <span class="skill-chip level-expert"><i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript</span>
+                        <span class="skill-chip level-advanced"><span class="ts-badge" aria-hidden="true">TS</span> TypeScript</span>
+                        <span class="skill-chip level-expert"><i class="fa-brands fa-react"></i> React</span>
+                        <span class="skill-chip level-expert"><i class="fa-brands fa-html5"></i> HTML</span>
+                        <span class="skill-chip level-advanced"><i class="fa-brands fa-css3-alt"></i> CSS </span>
+                        <span class="skill-chip level-advanced"><i class="fa-solid fa-palette"></i> UI Design</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-chips">
+                        <span class="skill-chip level-expert"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                        <span class="skill-chip level-advanced"><i class="fa-solid fa-server"></i> Express</span>
+                        <span class="skill-chip level-advanced"><i class="fa-solid fa-database"></i> MongoDB / MySQL</span>
+                        <span class="skill-chip level-expert"><i class="fa-solid fa-network-wired"></i> REST APIs</span>
+                        <span class="skill-chip level-expert"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Microservices</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Practices</h3>
+                    <div class="skill-chips">
+                        <span class="skill-chip level-expert"><i class="fa-solid fa-person-running" aria-hidden="true"></i> Agile</span>
+                        <span class="skill-chip level-expert"><i class="fa-brands fa-github" aria-hidden="true"></i> Git / GitHub</span>
+                        <span class="skill-chip level-expert"><i class="fa-brands fa-jenkins" aria-hidden="true"></i> Jenkins</span>
+                        <span class="skill-chip level-advanced"><i class="fa-solid fa-code-merge"></i> CI / CD</span>
+                        <span class="skill-chip level-advanced"><i class="fa-solid fa-docker"></i> Docker</span>
+                        <span class="skill-chip level-advanced"><i class="fa-brands fa-kubernetes" aria-hidden="true"></i> Kubernetes</span>
+                        <span class="skill-chip level-advanced"><i class="fa-solid fa-robot"></i> AI-assisted dev</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="skill-legend">
+                <span class="legend-item level-expert">Expert</span>
+                <span class="legend-item level-advanced">Advanced</span>
+                <span class="legend-item level-familiar">Familiar</span>
+            </div> -->
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div>
+                                <div class="experience-title">Software Developer</div>
+                                <div class="company-name">Tight Line Marketing, LLC</div>
+                            </div>
+                            <div class="duration-badge">2022 - Present</div>
+                        </div>
+                        <p class="experience-desc">Leading development of scalable applications, client-facing projects and leveraging cutting-edge technologies. Mentoring junior developers and driving architectural decisions.</p>
+                        <ul class="experience-list">
+                            <li>Led Agile Scrum teams leveraging GitHub Copilot, increasing project delivery speed by 30%</li>
+                            <li>Engineered microservices architecture improving system performance by 60% and cutting costs by 40%</li>
+                            <li>Collaborated with front-end teams to enhance user satisfaction by 35%</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div>
+                                <div class="experience-title">Jr. Software Developer</div>
+                                <div class="company-name">Yiion Systems</div>
+                            </div>
+                            <div class="duration-badge">2018 - 2021</div>
+                        </div>
+                        <p class="experience-desc">Built and maintained modern web applications using React, Node.js, and collaborated with cross-functional teams to solve complex problems.</p>
+                        <ul class="experience-list">
+                            <li>Developed dynamic single-page applications using React.js, increasing user retention by 25%</li>
+                            <li>Engineered scalable RESTful APIs improving backend performance by 40%</li>
+                            <li>Reduced system downtime by 30%, leading to 20% increase in operational efficiency</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">🏠</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Housing Management System</h3>
+                        <p class="project-desc">A comprehensive platform with user authentication, property management, and appointment scheduling.</p>
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">REST API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/AditiShah17" target="_blank" aria-label="GitHub" class="icon-link">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                <span class="sr-only">GitHub</span>
+                            </a>    
+                        </div>
+                     </div>
+                 </div>
+
+                <div class="project-card">
+                    <div class="project-image">💪</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sweat4Fit Platform</h3>
+                        <p class="project-desc">Global fitness community with real-time chat, nutrition tracking, and workout management.</p>
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">WebSocket</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/AditiShah17" target="_blank" aria-label="GitHub" class="icon-link">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                <span class="sr-only">GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">🛒</div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-desc">Full-featured online store with payment integration, inventory management, and analytics.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Stripe</span>
+                            <span class="tag">Redux</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/AditiShah17" target="_blank" aria-label="GitHub" class="icon-link">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                <span class="sr-only">GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-section">
+                <div class="contact-content">
+                    <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision. Let's create something amazing together!</p>
+                </div>
+                
+                <div class="contact-methods">
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+                         <h4>Email</h4>
+                         <a href="mailto:aditishah0596@gmail.com">aditishah0596@gmail.com</a>
+                     </div>
+                     
+
+                     <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+                         <h4>Phone</h4>
+                         <a href="tel:+12262612888">+1 (226) 261-2888</a>
+                     </div>
+                     
+
+                     <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></div>
+                         <h4>LinkedIn</h4>
+                         <a href="https://www.linkedin.com/in/aditishah17" target="_blank">Connect with me</a>
+                     </div>
+                </div>
+
+                <div class="calendly-section">
+                    <h3>Schedule a Coffee Chat</h3>
+                    <p>Let's discuss ideas, opportunities, or even just tech! I'm always excited to connect with fellow developers and innovators.</p>
+                    <a href="https://calendly.com/aditishah0596/coffee-chat" class="btn-calendly" target="_blank">☕ Book a Meeting</a>                </div>            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            <p>Made with ❤️ by Aditi Shah © 2025. All rights reserved.</p>
+        </div>
+    </footer>
+        </div>
+    </footer>
+</body>
+</html>
